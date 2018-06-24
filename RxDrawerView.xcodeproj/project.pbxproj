@@ -13,6 +13,8 @@
 		2B58C9FC20E0101500D521A9 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B58C9F920E0101500D521A9 /* RxCocoa.framework */; };
 		2B58C9FD20E0101500D521A9 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B58C9FA20E0101500D521A9 /* RxSwift.framework */; };
 		2B58C9FE20E0101500D521A9 /* DrawerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B58C9FB20E0101500D521A9 /* DrawerView.framework */; };
+		2B58CA4420E01B7C00D521A9 /* DrawerView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B58CA4320E01B7C00D521A9 /* DrawerView+Rx.swift */; };
+		2B58CA4620E01C6600D521A9 /* RxDrawerViewDelegateProxy.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B58CA4520E01C6600D521A9 /* RxDrawerViewDelegateProxy.swift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		2B58C9F920E0101500D521A9 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		2B58C9FA20E0101500D521A9 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		2B58C9FB20E0101500D521A9 /* DrawerView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DrawerView.framework; path = Carthage/Build/iOS/DrawerView.framework; sourceTree = "<group>"; };
+		2B58CA4320E01B7C00D521A9 /* DrawerView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrawerView+Rx.swift"; sourceTree = "<group>"; };
+		2B58CA4520E01C6600D521A9 /* RxDrawerViewDelegateProxy.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDrawerViewDelegateProxy.swift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 			children = (
 				2B58C9E120DB89FF00D521A9 /* RxDrawerView.h */,
 				2B58C9E220DB89FF00D521A9 /* Info.plist */,
+				2B58CA4320E01B7C00D521A9 /* DrawerView+Rx.swift */,
+				2B58CA4520E01C6600D521A9 /* RxDrawerViewDelegateProxy.swift.swift */,
 			);
 			path = RxDrawerView;
 			sourceTree = "<group>";
@@ -168,6 +174,7 @@
 				TargetAttributes = {
 					2B58C9DD20DB89FF00D521A9 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 					2B58C9E620DB89FF00D521A9 = {
 						CreatedOnToolsVersion = 9.4;
@@ -214,6 +221,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B58CA4420E01B7C00D521A9 /* DrawerView+Rx.swift in Sources */,
+				2B58CA4620E01C6600D521A9 /* RxDrawerViewDelegateProxy.swift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +368,7 @@
 		2B58C9F320DB89FF00D521A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -380,6 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikkovalimaki.RxDrawerView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -388,6 +399,7 @@
 		2B58C9F420DB89FF00D521A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -417,6 +429,7 @@
 		2B58C9F620DB89FF00D521A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RMSZZMU29R;
 				INFOPLIST_FILE = RxDrawerViewTests/Info.plist;
@@ -435,6 +448,7 @@
 		2B58C9F720DB89FF00D521A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RMSZZMU29R;
 				INFOPLIST_FILE = RxDrawerViewTests/Info.plist;
