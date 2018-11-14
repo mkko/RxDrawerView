@@ -1,0 +1,4 @@
+$(SRCROOT)/Carthage/Build/iOS/DrawerView.framework
+$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework
+$(SRCROOT)/Carthage/Build/iOS/RxDrawerView.framework
+$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework

@@ -1,0 +1,4 @@
+github "mkko/DrawerView"    ~> 1.0
+github "mkko/RxDrawerView"  ~> 1.0
+github "ReactiveX/RxSwift"  ~> 4.0
+
