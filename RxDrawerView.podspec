@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RxDrawerView"
-  s.version      = "0.4.1"
+  s.version      = "1.0.0"
   s.summary      = "RxSwift wrapper for DrawerView"
 
 
