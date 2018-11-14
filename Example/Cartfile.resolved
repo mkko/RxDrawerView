@@ -1,0 +1,3 @@
+git "../RxDrawerView/" "d28bf46de9c0b9295d8cb5172052d6f6a1a5f566"
+github "ReactiveX/RxSwift" "4.4.0"
+github "mkko/DrawerView" "1.0.0"
