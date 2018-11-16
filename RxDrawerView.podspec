@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RxDrawerView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "RxSwift wrapper for DrawerView"
 
 
@@ -127,6 +127,6 @@ RxDrawerView is an RxSwift wrapper for DrawerView. With RxDrawerView you can use
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "RxSwift",    "~> 4.0"
   s.dependency 'RxCocoa',    '~> 4.0'
-  s.dependency "DrawerView", "~> 0.4.7"
+  s.dependency "DrawerView", "~> 1.0.2"
 
 end
